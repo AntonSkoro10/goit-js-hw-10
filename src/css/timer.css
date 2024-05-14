@@ -25,13 +25,13 @@ body {
     border-radius: 5px;
 }
 
-button[data-start] {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+button {
+font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    width: 88px;
+    height: 35px;
 }
 
 .timer {

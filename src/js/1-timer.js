@@ -20,9 +20,6 @@ function convertMs(ms) {
     return { days, hours, minutes, seconds };
 }
 
-console.log(convertMs(2000));
-console.log(convertMs(140000)); 
-console.log(convertMs(24140000)); 
 
 const dataStart = document.querySelector('[data-start]');
 const dateTimePicker = document.querySelector('#datetime-picker');
@@ -47,6 +44,10 @@ const options = {
 };
 
 flatpickr('#datetime-picker', options);
+
+window.addEventListener('load', function() {
+    dataStart.disabled = true;
+});
 
 dataStart.addEventListener('click', function () {
     this.disabled = true;
